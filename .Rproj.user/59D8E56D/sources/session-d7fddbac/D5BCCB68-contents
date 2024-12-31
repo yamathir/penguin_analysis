@@ -1,0 +1,57 @@
+---
+title: "My penguin study work"
+format: 
+  html:
+    code-link: true
+  pdf: 
+    documentclass: article
+    latex-engine: pdflatex
+editor: visual
+---
+
+## Quarto
+
+This the day : 12/20/2024 of our God and Lord.
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+# Hello, Penguins!
+
+# Data
+
+For this analysis we'll use the [penguins](https://allisonhorst.github.io/palmerpenguins/ "This is the parent set") dataset from the **palmerpenguins** package.
+
+```{r}
+#| label: load-packages
+#| message: false
+
+library(tidyverse)
+library(ggthemes)
+library(palmerpenguins)
+library(gt)
+```
+
+```{r}
+glimpse(penguins)
+```
+
+```{r}
+#| label: bill-dims-species
+#| fig-width: 5
+#| fig-asp: 0.618
+#| fig-alt: |
+#|    A scatterplot of penguins' bill depth and lenght, colored       by species of penguins. There is a relatively strong, 
+#|    linear association.
+
+ggplot(
+    penguins,
+    aes(
+        x = bill_length_mm, y = bill_depth_mm,
+        color = species, shape = species  # Correct 'color' instead of 'colord'
+    )
+) +
+    geom_point() +
+    theme_minimal() +   
+    scale_color_brewer(palette = "Set1") +  # Use colorblind-friendly palette (adjust if needed)
+    labs(x = "Bill Length (mm)", y = "Bill Depth (mm)")  # Labels need quotes
+```

@@ -1,0 +1,18 @@
+# RStudio project files
+.Rproj.user/
+
+# Temporary files
+*.RData
+*.rds
+*.Rhistory
+*.Rmd
+*.Rout
+*.o
+*.so
+
+# Build directories
+_site/
+
+# Hidden files
+.DS_Store
+.Rproj
