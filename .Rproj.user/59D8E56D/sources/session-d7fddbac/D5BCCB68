@@ -3,7 +3,7 @@
     "path": "~/GIT/penguin_analysis/My-penguin-study.qmd",
     "project_path": "My-penguin-study.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "947347723",
     "contents": "",
     "dirty": false,
     "created": 1735561807191.0,
@@ -16,14 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "154:200"
+        "rmdVisualModeLocation": "402:211",
+        "cursorPosition": "17,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1735561617,
+    "lastKnownWriteTime": 1735642273,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1735561617,
+    "last_content_update": 1735642273060,
     "read_only": false,
     "read_only_alternatives": []
 }
